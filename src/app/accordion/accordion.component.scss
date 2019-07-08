@@ -1,0 +1,52 @@
+* {
+  font-family: Oswald Light;
+  font-size: 16px;
+}
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  
+ .panel-title {
+    margin: 2px !important;
+    padding: 10px;
+    font-family: Oswald Regular !important;
+    font-size: 16px;
+    width: 100%;
+    background-color: #ddd;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    color: #444;
+    cursor: pointer;
+  }
+
+  .glyphicon-chevron-down {
+    background-color: yellow;
+    background-image: 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>');
+    height: 24px;
+    width: 24px;
+    float: right;
+    -webkit-transform: rotate(2.36rad);
+    -moz-transform: rotate(2.36rad);
+    -o-transform: rotate(2.36rad);
+    transform: rotate(2.36rad);
+    
+  
+  }
+  .glyphicon-chevron-right{
+    background-color: yellow;
+    background-image: 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>');
+    height: 24px;
+    width: 24px;
+    float: right;
+  }
+ 
+  .panel-body{
+    padding: 10px;
+    border-bottom: 2px solid;
+  }
+  

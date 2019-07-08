@@ -1,0 +1,25 @@
+<!-- content starts here -->
+<!-- <div class="container">
+    <h1>Accordions</h1>
+    <div *ngFor="let item of items; let i = index">
+        <button class="accordion ponterCursor" (click)="panleExpanded = !panleExpanded">Q{{item.id}} {{item.question}}</button>
+        <div class="accordion-content" *ngIf="panleExpanded">
+            <span>{{item.answer}}</span>
+        </div>
+    </div>
+  </div> -->
+  <!-- contend ends here -->
+  <div id="panel-group" class="container">
+        <div class="panel panel-default" *ngFor="let item of items; let i = index">
+          <div class="panel-heading" (click) = "current = i">
+             <h5 class="panel-title">
+                <i class='glyphicon' 
+                  [class.glyphicon-chevron-right] = "i != current"
+                  [class.glyphicon-chevron-down] = "i == current" ></i> Q{{item.id}}  {{item.question}}
+             </h5>
+          </div>
+           <div id="collapse1" class="panel-collapse" [class.collapse]='current != i'>
+            <div class="panel-body">{{item.answer}}</div>
+          </div>
+        </div>
+      </div>
